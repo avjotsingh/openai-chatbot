@@ -1,0 +1,11 @@
+.file-list {
+  display: block;
+  height: 70%;
+  width: 100%;
+  font-style: italic;
+  padding: 3rem;
+}
+
+.file-list ol li {
+  margin: 0.75rem;
+}

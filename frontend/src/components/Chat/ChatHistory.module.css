@@ -1,0 +1,9 @@
+.chat-history {
+  height: 80%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.chat-history::-webkit-scrollbar {
+  display: none;
+}

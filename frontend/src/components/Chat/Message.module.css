@@ -1,0 +1,47 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  color: black;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 60%;
+}
+
+.message p {
+  margin: 0;
+  padding: 0;
+}
+
+/* .user::before {
+  content: "";
+  display: block;
+  width: 40%;
+}
+
+.assistant::after {
+  content: "";
+  display: block;
+  width: 40%;
+} */
+
+.user {
+  align-items: flex-end;
+}
+
+.user .message {
+  background-color: #7dfff2;
+}
+
+.assistant {
+  align-items: flex-start;
+}
+
+.assistant .message {
+  background-color: #b4c5c7;
+}

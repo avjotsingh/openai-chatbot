@@ -1,0 +1,22 @@
+.context-pane {
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pdf-input {
+  display: flex;
+  justify-content: center;
+}
+
+.uploaded-pdfs {
+  margin-bottom: 10vh 0;
+  padding: 2rem;
+  text-align: right; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}

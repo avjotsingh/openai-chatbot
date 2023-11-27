@@ -1,0 +1,14 @@
+.header {
+  height: 10%;
+  padding: 0.25rem;
+  margin: 5% 0;
+  width: 100%;
+  font-size: 2rem;
+}
+
+h1 {
+  font: inherit;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
