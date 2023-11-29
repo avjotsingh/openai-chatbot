@@ -4,7 +4,7 @@ import { OpenAI } from "openai"
 import csv from 'csv-parser';
 
 const openai = new OpenAI();
-let USE_EMBEDDINGS = true;
+let USE_EMBEDDINGS = false;
 const EMBEDDINGS_FILENAME = 'embeddings.csv';
 
 export function setUseEmbeddings(val) {
@@ -28,8 +28,9 @@ export async function getOpenAIResponse(prompt) {
     } else {
       const { texts, embeddings } = await readEmbeddings();
       // const prompt = chats[chats.length - 1].content;
-      const info = getMostSimilarText(prompt, texts, embeddings);
-      const newPrompt = `Info: ${info}. Question: ${prompt}, Answer: `
+      const info = await getMostSimilarText(prompt, texts, embeddings);
+      console.log(`Context: ${info}`)
+      const newPrompt = `You are given this info - ${info}. Answer this question - ${prompt} `
       completion = await openai.completions.create({
         model: 'text-davinci-003',
         prompt: newPrompt,
